@@ -1,0 +1,139 @@
+.productSearchDontExists{
+    width: 1135px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 60px;
+
+    font-family: 'Lato';
+    .titleSeachProducts{
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: .5px;
+    }
+    .subTitleSeachProducts {
+        font-size: 16px;
+        margin-top: 5px;
+        color: #ec3e3e;
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 15px;
+        i{
+            font-size: 11px;
+            color: #154380;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.whySearch{
+    width: 1135px;
+    margin: auto;
+    font-family: 'Lato';
+    font-size: 20px;
+    letter-spacing: .3px;
+    font-weight: 100;
+    margin-top: 60px;
+}
+
+.searchProductToShow{
+    width: 800px;
+    margin: auto;
+    margin-top: 60px;
+
+    p{
+        font-family: 'Lato';
+        font-size: 24px;
+        font-weight: 100;
+    }
+
+    .flexSearch{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    input{
+        width: 90%;
+        padding: 12px;
+        border: 1px solid #ccc;
+    }
+    button{
+        cursor: pointer;
+        background-color: #154380;
+        border: none;
+        width: 9.8%;
+        i{
+            color: #fff;
+        }
+    }
+}
+.listProducts{
+    width: 1135px;
+    margin: auto;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .itemSearched{
+        text-decoration: none;
+        color: #212121;
+        cursor: pointer;
+        margin-right: 5px;
+        width: 19.5%;
+        border: 1px solid rgba(219, 219, 219, 0.459);
+        margin-top: 10px;
+        height: 270px;
+        border-radius: 3px;
+        font-family: 'Lato';
+        .photo{
+            width: 100%;
+            height: 150px;
+
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                margin: auto;
+            }
+        }
+        .descriptionProduct{
+            padding: 5px;
+
+            .previous-price{
+                font-size: 13px;
+                text-decoration: line-through;
+                color: #666;
+            }
+            .price {
+                font-size: 22px;
+                font-family: 'Lato';
+
+                .haveDiscount{
+                    font-size: 14px;
+                    color: #ec3e3e;
+                    font-weight: bold;
+                }
+            }
+            .desc{
+                font-family: 'Roboto';
+                font-size: 14px;
+                margin-top: 5px;
+            }
+        }
+
+    }
+}

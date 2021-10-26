@@ -1,0 +1,65 @@
+section.succesPayment {
+
+    width: 1135px;
+    margin:  60px auto;
+    text-align: center;
+
+    p.titlePayment{
+        font-size: 28px;
+        font-family: 'Lato';
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: .3px;
+    }
+    span.subPayment {
+        font-family: 'Lato';
+        text-transform: uppercase;
+        color: #666;
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+
+    div.statusCompra{
+        width: 550px;
+        margin: 20px auto;
+        font-family: 'Lato';
+        p{
+            text-align: start; 
+        }
+        p.titleContent{
+            text-transform: uppercase;
+            color: #666;
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+        div.contentStatus{
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ccc;
+            background-color: rgb(240, 240, 240);
+            border-radius: 3px;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        padding: 12px;
+        background-color: #154380;
+        color: #fff;
+        margin-top: 15px;
+        display: block;
+        width: 180px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 12.5px;
+        margin: auto;
+        font-family: 'Lato';
+    }
+}

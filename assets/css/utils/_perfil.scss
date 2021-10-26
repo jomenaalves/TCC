@@ -1,0 +1,485 @@
+.contentPerfilUser{
+    max-width: 1135px;
+    margin: 60px auto;
+    display: flex;
+    nav {
+        width: 20%;
+        p.titleNav{
+            font-size: 22px;
+            font-family: 'Lato';
+            color: #152580;
+        }
+
+
+        a{
+            display: flex;
+            text-decoration: none;
+            padding: 10px 0;
+            margin-top: 5px;
+            border-radius: 3px;
+            display: flex;
+            cursor: pointer;
+            color: #212121;
+            font-family: 'Lato';
+            align-items: center;
+
+            i{
+                color: #212121;
+                font-size: 20px;
+                margin-right: 12PX;
+            }
+        }
+        ul{
+            list-style: none;
+
+            li{
+                padding: 10px 0;
+                margin-top: 5px;
+                border-radius: 3px;
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                i{
+                    color: #212121;
+                    font-size: 18px;
+                }
+
+                p{
+                    margin-left: 10px;
+                    font-family: 'Lato';
+                    font-family: 20px;
+                }
+
+                &:hover{
+                   i,p {
+                       color: #154380;
+                   }
+                }
+            }
+        }
+    }
+    .mainPerfil{
+        padding: 8px 0;
+
+        .pMain{
+            font-family: 'Lato';
+            font-size: 20px;
+            font-weight: 100;
+        }
+        .addEnd{
+            cursor: pointer;
+            border: 2px dashed #ccc;
+            width: 32.9%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;margin-top: 15px;
+
+            i{
+                font-size: 22px;
+                color: #154380;
+            }
+
+            p{
+                font-family: 'Lato';
+            }
+        }
+        .addEndContent{
+            margin-top: 15px;
+            display: none;
+
+            p{
+                font-family: 'Lato';
+
+                &:nth-child(2){
+                    color: #154380;
+                }
+            }
+
+            form{
+                margin-top: 15px;
+                div.formControl{
+                    display: flex;
+                    flex-direction: column;
+                
+                
+                    label{
+                        font-family: 'Lato';
+                        font-size: 13px;
+                        padding: 3px 0;
+
+                    }
+
+                    input,select{
+                        padding: 10px;
+                        color: #212121;
+                        border-radius: 3px;
+                        border: none;
+                        border: 1px solid #ccc;
+                        width: 350px;
+                        font-family: 'Lato';
+                        outline: none;
+                    }              
+                }
+
+                button{
+                
+                    padding: 10px;
+                    margin-top: 15px;
+                    background-color: #154380;
+                    color: #FFF;
+                    font-family: 'Lato';
+                    border: 1px solid #ccc;
+                    cursor: pointer;
+
+                }
+
+                div.secondStage{
+                    display: none   ;
+                }
+            }
+        
+        }
+    }
+}
+.modalFillInAllFields{
+    position: fixed;
+    bottom: 20px;
+    width: 390px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    background-color: #ca2727;
+    border: 1px solid #ccc;
+}
+.enderecos{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(1035px - 20%);
+    margin-top: 15px;
+    .addressItem{
+        width: 32.9%;
+        margin-right: 5px;
+        margin-top: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        height: 200px;
+        font-family: 'Lato';
+        .headerAddress{
+            width: 100%;
+            display: flex;
+            background-color: #154380;
+            color: #fff;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            p.title{
+                font-size: 16px;
+                margin-top: 0;
+                text-transform: uppercase;
+                color: #fff;
+                letter-spacing: 2px;
+                font-weight: bold;
+            }
+            .acoesAddress{
+                i{
+                    cursor: pointer;
+                    margin-left: 10px;
+                }
+            }
+
+        }
+        .contentAddress{
+            padding: 10px;
+        }
+       
+
+        p{
+            margin-top: 5px;
+            color: #212121;
+        }
+    }
+}
+
+div.mainRequests{
+    p.title{
+        font-family: 'Lato';
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 10px;
+        
+    }
+    width: 900px;
+    table{
+        line-break: normal;
+        width: 100%;    
+        border-collapse: collapse;
+        user-select: none;
+
+        thead{
+            td{
+                border: 1px solid #ccc;
+                padding: 15px 20px;
+                font-family: 'Lato';
+                background-color: rgb(248, 244, 244);
+            }
+        }
+
+        tr,td{
+            border: 1px solid rgb(238, 238, 238);
+            position: relative;
+        }
+        tbody{
+            td{
+                padding: 15px 20px;
+                font-family: 'Lato';
+            }
+
+            div.status1,div.status2,div.status3{
+                font-size: 12px;
+                padding: 10px 5px;
+                font-family: 'Lato';
+                text-transform: uppercase;
+                border-radius: 3px;
+                text-align: center;
+            }
+
+            div.status1{
+                background-color: rgba(255, 255, 0, 0.438);
+            }
+            
+            div.status2{
+                background-color: rgba(0, 38, 255, 0.438);
+            }
+             
+            div.status3{
+                background-color: rgba(123, 255, 0, 0.438);
+            }
+
+
+            div.deleteProduct{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                right: -15px;
+                background-color: #ec3e3e;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 13px;
+                margin-top: -30px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    div.dontHavePurchase{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60px;
+        user-select: none;
+
+        p{
+            font-family: 'Lato';
+            font-size: 20px;
+            font-weight: 100;
+            margin-top: 10px;
+            letter-spacing: .3px;
+            text-transform: uppercase;
+        }
+
+        a{
+            padding: 10px 15px;
+            border: none;
+            background-color: #154380;
+            margin-top: 10px;
+            border-radius: 3px;
+            color: #fff;
+            font-family: 'Lato';
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 100;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+
+}
+
+div.mainWallet{
+    width: 900px;
+    div.headerWallet{
+        display: flex;
+        justify-content: space-between;
+ 
+        p.titlePage{
+          
+            font-family: 'Lato';
+            font-size: 20px;
+            font-weight: 100;
+            letter-spacing: .3px;
+            text-transform: uppercase;
+        
+        }
+
+        div.money{
+            span{
+                text-transform: uppercase;
+                font-family: 'Lato';
+                font-size: 12px;
+            }
+            p{
+                font-family: 'Lato';
+                font-weight: 800;
+                font-size: 20px;
+            }
+        }
+    }
+
+    div.trans{
+        margin-top: 30px;
+
+        p.titleTranslactions{
+            font-family: 'Lato';
+        }
+
+        div.contentHistory{
+            margin-top: 10px;
+            div.content{
+                padding: 15px 10px;
+                border-radius: 3px;
+                user-select: none;
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #444343;
+                font-family: 'Lato';
+
+                p.added{
+                    color: green;
+                }
+                p.outed{
+                    color:rgb(199, 60, 60);
+                }
+            }
+
+            .add {
+                background-color: rgb(138, 221, 138);
+            }
+            .out {
+                background-color: rgb(221, 216, 138);
+            }
+
+            .dontHaveTranslactions{
+                text-align: center;
+                margin-top: 40px;
+                font-family: 'Lato';
+                color: #212121;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: .4px;
+            }
+        }
+    }
+}
+
+div.MainRatings{
+    width: 900px;
+    p.titleRatings{
+        font-size: 22px;
+        font-family: 'Lato';
+        color: #212121;
+        letter-spacing: .3px;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 13px;
+            margin-top: 4px;
+            color: #dddb45 ;
+            margin-left: 10px;
+        }
+    }
+
+    span.subRatings{
+        display: block;
+        margin-top: 5px;
+        font-family: 'Lato';
+        letter-spacing: .3px;
+        color: #666;
+        user-select: none;
+    }
+
+    div.contentProducts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.productToBeEvaluated{
+        width: 19.8%;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 3px;
+        padding: 10px 0px;
+        margin-left: 0.2%;
+        margin-top: 10px;
+        div.photo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            width: 100%;
+            img{
+                width: 150px;
+                height: 150px;
+                max-height: 100%;
+                max-width: 100%;
+                clip-path: fill-box;
+            }
+        }
+        div.contentEvaluated{
+            border-top: 1px solid rgb(243, 243, 243);
+            p.titleContentEvaluated{
+                text-align: center;
+                margin-top: 10px;
+                font-size: 14px;
+                letter-spacing: .4px;
+                text-transform: uppercase;
+                font-family: 'Lato';
+                color: #666;
+            }
+            .rate {
+               display: flex;
+               align-items: center;
+               width: 100px;
+               margin: auto;
+               justify-content: space-between;
+               margin-top: 10px;
+
+               div.stars{
+                   cursor: pointer;
+                   i{
+                       color:#ccc;
+                   }
+               }
+            }
+        }
+    }
+}
+.yellowStar{
+    color: #dddb45!important;
+}

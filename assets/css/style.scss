@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+//reset styles 
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+    word-break: break-all;
+}
+//home style
+ @import "utils/home";
+
+ @import "utils/gender";
+
+ @import "utils/auth/authStyle";
+
+ @import "utils/auth/authAdminStyle";
+
+ @import "utils/adminIndex";
+
+ @import "utils/products";
+
+ @import "utils/cart";
+
+ @import "utils/auth/loginUser";
+
+ @import "utils/search";
+
+ @import "utils/filters";
+
+ @import "utils/perfil";
+
+ @import "utils/shopNowController";
+
+ @import "utils/paymentSuccess";
+
+ @import "utils/shopCart";
+ 
+ @import "utils/comments";

@@ -1,0 +1,100 @@
+#comments{
+
+    padding: 25px;
+    p.titleComents{
+
+        font-family: 'Lato';
+        color: #154380;
+        font-size: 19px;
+        font-weight: 900;
+    }
+
+
+    .commentsContent{
+        margin-top: 40px;
+
+        .commentItem{
+            margin-top: 10px;
+            position: relative;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 1px;
+            min-height: 200px;
+            padding: 20px 15px;
+
+
+            .headerComment{
+                font-family: 'Roboto';
+                p{
+                    text-transform: uppercase;
+                    font-weight: normal;
+                    letter-spacing: 0.5px;
+                    font-size: 12px;
+
+                    a{
+                        margin-left: 5px;
+                        font-size: 9px;
+                        color: #212121;
+                    }
+                }
+            }
+
+            .contextComment{
+                margin-left: 0px;
+                margin-top: 10px;
+
+                display: flex;
+
+                div.commentText{
+                    margin-left: 10px;
+                    font-family: 'Lato';
+                    letter-spacing: 0.3px;
+                    color: rgb(36, 36, 36);
+                }
+            }
+        }
+        .answerComment{
+            margin-left: 20px;
+            margin-top: 12px;
+            display: flex;
+
+            div{
+                margin-left: 10px;
+                font-family: 'Lato';
+                margin-top: -5px;
+                p:first-child{
+                    font-size: 11px;
+                    text-transform: uppercase;
+                }
+                p:last-child{
+                    margin-top: 5px;
+                    margin-left: 5px;
+                    color: rgb(36, 36, 36);
+                }
+            }
+        }
+        div.actions{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+
+            i{
+                cursor: pointer;
+                color: rgb(65, 65, 65);
+
+                &[data-aswer="answer"]{
+                    color: #154380;   
+                }
+                &[data-remove="remove"]{
+                    color: #eb2424;
+                }
+                &[data-edit="edit"]{
+                    color: royalblue;
+                }
+            }
+        }
+    }
+}

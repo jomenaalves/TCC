@@ -1,0 +1,37 @@
+{
+    "name": "zecadev/ecommerce",
+    "description": "E-commerce para apresentação do TCC",
+    "authors": [
+        {
+            "name": "José Carlos Omena Alves",
+            "email": "jomenaalves@gmail.com"
+        },
+        {
+            "name": "Ana Flávia Gomes da Silva",
+            "email": "anafgs@hotmail.com"  
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\" : "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "php": "^7.0|^8.0",
+        "coffeecode/router": "^1.0",
+        "league/plates": "^3.4",
+        "phpmailer/phpmailer": "^6.5",
+        "firebase/php-jwt": "^5.4",
+        "ext-gd": "*",
+        "coffeecode/uploader": "^1.0",
+        "fhferreira/correios-php-fork": "^1.0",
+        "league/omnipay": "3.1",
+        "omnipay/paypal": "3.0"
+    }
+}

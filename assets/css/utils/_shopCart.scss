@@ -1,0 +1,572 @@
+section.allProducts{
+    width: 900px;
+    margin: 45px auto;
+
+    div.contentBox{
+        padding: 20px 15px;
+        border-radius: 2px;
+        background-color: #f3f4f5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div.qtd{
+            p{
+                font-size: 14px;
+                text-transform: uppercase;
+                font-family: 'Lato';
+                letter-spacing: .3px;
+            }
+        }
+        div.totalShopping{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Lato';
+            p{
+                font-size: 12px;
+            }
+            span{
+                font-size: 18px;
+                color: #ec3e3e;
+            }
+
+            div.totalItens{
+                margin-right: 15px;
+                span{
+                    color: #212121!important;
+                }
+            }
+            div.totalAll{
+                margin-left: 25px;
+                i{
+                    margin-top: 10px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    color: #212121;
+                }
+            }
+        }
+    }
+    
+}
+
+div.buyItens{
+    width: 900px;
+    margin: -35px auto;
+
+    div.headerSteps{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        div.step{
+            display: flex;
+            width: 33.1%;
+            border-top: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            padding: 15px;
+            color: #666;
+            font-family: 'Lato';
+            i{
+                font-size: 19px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .stepActive{ 
+        border-top: 1px solid #154380!important;
+        border-left: 1px solid #154380!important;
+        border-right: 1px solid #154380!important;
+        p{
+            color: #154380;
+        }
+        i{
+            color: #154380;
+        }
+    }
+}
+
+div.contentStepsCart{
+    border-bottom: 1px solid #ccc!important;
+    border-left: 1px solid #ccc!important;
+    border-right: 1px solid #ccc!important;
+    height: 450px;
+    margin-top: 5px;
+    margin-bottom: 75px;
+
+
+    div.contentStep{
+        display: none;
+    }
+    div[data-stepC="1"]{
+        padding: 20px;
+
+
+        div.dataUsage{
+
+            border: 1px solid #ccc;
+            padding: 25px 15px;
+            user-select: none;
+            border-radius: 3px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'lato';
+            text-transform: uppercase;
+            font-size: 13px;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color:#f0ad4e;
+                width: 5px;
+                height: 100%;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+
+            }
+
+            
+            i{
+                margin-right: 15px;
+            }
+        }
+        
+        div.contentAddress{
+            margin-top: 10px;
+            background-color: #f3f4f5;
+            border: 1px solid rgb(235, 235, 235);
+            width: 50%;
+            padding: 15px;
+            user-select: none;
+            font-family: 'Lato';
+            border-radius: 3px;
+            position: relative;
+
+            p{
+                letter-spacing: .3px;
+                margin-top: 3px;
+                font-size: 14px;
+            }
+
+            div.addressEntrega{
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                top: 0;
+                right: 0;
+                background-color: #154380;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+
+
+        div.AnydataUser{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            div.firstLineForData{
+                display: flex;
+                justify-content: space-between;
+                div.contolDataForm{
+                    width: 32.8%;
+                    display: flex;
+                    flex-direction: column;
+
+                    font-family: 'Lato';
+                    label{
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        letter-spacing: .5px;     
+                    }
+
+                    input{
+                        padding: 12px;
+                        margin-top: 3px;
+                        border: 1px solid #ccc;
+                        border-radius: 3px;
+
+                        &:disabled{
+                            cursor: not-allowed;
+                            user-select: none;
+                        }
+                    }
+                }
+            }
+
+            div.secondLineForData{
+                display: flex;
+                margin-top: 10px;
+                div.contolDataForm{
+                    width: 32.8%;
+                    display: flex;
+                    flex-direction: column;
+
+                    font-family: 'Lato';
+                    label{
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        letter-spacing: .5px;     
+                    }
+
+                    input,select{
+                        padding: 12px;
+                        margin-top: 3px;
+                        border: 1px solid #ccc;
+                        border-radius: 3px;
+
+                        &:disabled{
+                            cursor: not-allowed;
+                            user-select: none;
+                        }
+                    }
+
+                    &:nth-child(2){
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        
+        div.buttons{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-top: 15px;
+
+            button{
+                cursor: pointer;
+                padding: 13px;
+                width: 150px;
+                background-color: transparent;
+                border: none;
+            }
+
+            .back{
+                border: 1px solid #ccc;
+                background-color:#e9e7e7;
+                font-family: 'Lato';
+                margin-right: 7px;
+                border-radius: 3px;
+                color: #6666;
+            }
+            .next{
+                background-color: #154380;
+                color: #fff;
+                border-radius: 3px;
+                border: 1px solid #154380;
+                font-family: 'Lato';
+            }
+        }
+    }
+}
+.activeStepItem{
+    display: block!important;
+}
+
+div.paymentItem{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+    padding: 20px;
+
+    div{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        i{
+            margin-left: 15px;
+        }
+    }
+    img{
+        border: 1px solid #ccc;
+        padding: 7px;
+        border-radius: 2px;
+        margin-left: 15px;
+    }
+
+    label{
+        display: flex;
+        text-transform: uppercase;
+        user-select: none;
+        align-items: center;
+
+        p{
+            margin-left: 15px;
+            font-family: 'Lato';
+            font-weight: 800;
+            letter-spacing: .2px;
+            font-size: 14px;
+        }
+    }
+}
+p.titleStep{
+    margin-top: 10px;
+    font-family: 'Lato';
+    font-size: 18px;
+}
+
+div.buttonsStep2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 214px;
+    margin-right: 20px;
+
+    button{
+        cursor: pointer;
+        padding: 13px;
+        width: 150px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .prevStep{
+        border: 1px solid #ccc;
+        background-color:#e9e7e7;
+        font-family: 'Lato';
+        margin-right: 7px;
+        color: #212121;
+        border-radius: 3px;
+    }
+    .nextStep{
+        background-color: #154380;
+        color: #fff;
+        border-radius: 3px;
+        border: 1px solid #154380;
+        font-family: 'Lato';
+    }
+   
+
+   
+}
+
+div.verifyYoursData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60PX;
+    margin-bottom: 10px;
+
+    p.titleToVerify{
+        font-family: 'Lato';
+        font-size: 25px;
+        font-weight: 100;
+        margin-top: 10px;
+        letter-spacing: .3px;
+    }
+}
+
+div.contentStep3{
+    text-align: center;
+    font-family: 'Lato';
+
+    p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+div.buttonsContentStep3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+    button{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 150px;
+
+        &:first-child{
+            background-color: rgb(233, 231, 231);
+            padding: 13px;
+            border-radius: 45px;
+            border: 1px solid #ccc;
+            font-family: 'Lato';
+        }
+
+        &:last-child{
+
+            background-color: #154380;
+            margin-left: 20px;
+            padding: 13px;
+            border-radius: 45px;
+            font-family: 'Lato';
+            color: #fff;
+
+        }
+    }
+}
+
+div.modalToPayWithWalletInCart {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.24);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    div.contentModalPayWithWalletinCart {
+
+        width: 550px;
+        background-color: #fff;
+        border-radius: 3px;
+
+        div.dontHaveMoney{
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                font-size: 22px;
+                font-weight: 100;
+                text-transform: uppercase;
+                font-family: 'Lato';
+                margin-top: 10px;
+                letter-spacing: .3px;
+            }
+
+            span{
+                font-family: 'Lato';
+                margin-top: 5px;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+
+            span.required{
+                color: green;
+            }
+            span.got{
+                color: #ec3e3e;
+            }
+
+            button{
+                background-color: transparent;
+                border: none;
+                margin-top: 10px;
+                font-size: 15px;
+                font-family: 'Lato';
+                font-weight: 100;
+                cursor: pointer;
+                i{
+                    font-size: 10px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        div.haveMoney{
+            padding: 20px;
+            div.headerMoney{
+                span{
+                    font-weight: 100;
+                    font-family: 'Lato';
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+                float: right;
+
+                p.totalMoney{
+                    font-family: 'Lato';
+                    font-weight: 900;
+                    font-size: 20px;
+                }
+            }
+
+            div.productToBuyed{
+                margin-top: 80px;
+                display: flex;
+                justify-content: space-between;
+                background-color: #f3f4f5;
+                padding: 10px;
+                border-radius: 3px;
+
+                span{
+                    font-family: 'Lato';
+                    text-transform: uppercase;
+                    font-size: 13px;
+                }
+                p{
+                    font-family: 'Lato';
+                    color: #525252;
+                }
+            }
+            div.totalAfter{
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: end;
+
+                span{
+                    font-family: 'Lato';
+                    text-transform: uppercase;
+                    font-size: 13px;
+                }
+
+                p{
+                    font-family: 'Lato';
+                    color: #525252;
+                }
+            }
+
+            .buttons{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                margin-top: 25px;
+
+
+                button{
+                    padding: 13px 15px;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-family: 'Lato';
+
+                    &:first-child{
+                        margin-right: 10px;
+                        background-color: #f3f4f5;
+                        transition: 1s all;
+
+                        &:hover{
+                            background-color: #ccc;
+                        }
+                    }
+
+                    &:last-child{
+                        background-color: #154380;
+                        color: #fff;
+                        transition: 1s all;
+                        
+                        &:hover{
+                            background-color: #ec3e3e;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

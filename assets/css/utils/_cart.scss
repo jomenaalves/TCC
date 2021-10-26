@@ -1,0 +1,327 @@
+
+.ShoppingCart{
+    max-width: 1130px;
+    margin: auto;
+    margin-top: 40px;
+
+    p.titleSection{
+        font-size: 20px;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        font-weight: 100;
+        color: #252525;
+
+        i{
+            margin-left: 2px;
+            font-size: 12px;
+            color: rgba($color: #000000, $alpha: .8);
+        }
+    }
+    .contentShoppingCart{
+        margin-top: 10px;
+        padding: 0px;
+        width: 100%;
+
+        .headerShoppingCart{
+            background-color: #f3f4f5;
+            td{
+                &:first-child{
+                    width: 45%;
+                }
+            }
+            p{
+              
+                font-family: 'Lato';
+                text-transform: uppercase;
+                font-weight: 100;
+                letter-spacing: .5px;
+                font-size: 14px;
+            }
+            td{
+                
+                color: rgba($color: #000000, $alpha: .9);
+                letter-spacing: .3px;
+                text-transform: uppercase;
+                border: 1px solid rgba(204, 202, 202, 0.445);
+            }
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid rgba(204, 202, 202, 0.445);
+            td{
+                padding: 15px 10px;
+                font-family: 'Lato';
+
+                i{
+                    text-align: center;
+                }
+            }
+            tr{
+                border-bottom: 1px solid rgba(204, 202, 202, 0.445);
+            }
+            .productCart{
+                display: flex;
+                align-items: center;
+                p{
+                    margin-left: 16px;
+                }
+            }
+            .qtdContainer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .addQtd,.remoceQtd{
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #f3f4f5;
+                    color: #fff;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    i{
+                        font-size: 11px;
+                        color: #212121;
+                    }
+                }
+                .qtd{
+                    padding: 0 15px;
+                }
+            }
+            .priceProduct{
+                font-size: 18px;
+                text-align: center;
+                font-weight: normal;
+            }
+            .subTotal{
+                font-size: 18px;
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .buttonsCart{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            width: 250px;
+            button,a{
+                text-decoration: none;
+                width: 250px;
+                text-align: center;
+                padding: 15px;
+                border-radius: 3px;
+                cursor: pointer;
+                border: none;
+            }
+            button{
+                background-color: #212121;
+                color: #fff;
+                font-size: 14px;
+                font-family: 'Lato';
+                text-transform: uppercase;
+                letter-spacing: .5px;
+            }
+            a{
+                background-color: #f3f4f5;
+                border: 1px solid #ccc;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: .5px;
+                font-family: 'Lato';
+                margin-top: 10px;
+            }
+        }
+
+        .secure{
+            display: flex;
+
+            width: calc(100% - 250px);
+            .item{
+                width: 33.3%;
+                border-right: 1px solid #ccc;
+                display: flex;
+                padding: 0 30px;
+                align-items: center;
+
+                &:last-child{
+                    border: none;
+                }
+
+                i{
+                    font-size: 30px;
+                }
+
+                .contentCard{
+                    margin-left: 15px;
+
+                    p{
+                        color: #212121;
+                        font-family: 'Lato';
+                        letter-spacing: .3px;
+                        font-size: 14px;
+                    }
+                    span{
+                        font-family: 'Lato';
+                        color: #464646;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+.cep{
+    background-color: #f3f4f5;
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cepContent{
+        p{
+            font-family: 'Lato';
+            padding: 3px 0;
+            color: #212121;
+            letter-spacing: .3px;
+            font-size: 14px;
+        }
+        input{
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 13px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #212121;
+            border-radius: 3px;
+            width: 140px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+    }
+}
+.subtotal{
+    padding:  10px 20px ;
+    background-color: #e9eef3;
+    border-top: 1px solid rgba(204, 202, 202, 0.445);
+
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Lato';
+
+    p{
+        color: rgba($color: #000000, $alpha: .8);
+        font-size: 16px;
+    }
+    span{
+        color: #252525;
+        font-size: 22px;
+    }
+}
+
+.total{  
+    padding:  10px 20px ;
+
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Lato';
+
+    p{
+        color: rgba($color: #000000, $alpha: .8);
+        font-size: 18px;
+    }
+    span{
+        color: #ec3e3e;
+        font-size: 26px;
+    }
+
+}
+.loaderCep{
+    float: right;
+    margin-left: 10px;
+    user-select: none;
+}
+.contentInfoCep{
+    font-family: 'Lato';
+    color: #252525;
+    p{
+        color: #666;
+    }
+    span{
+        color: #212121;
+    }
+}
+
+.errorText{
+    display: none;
+    font-family: 'Lato';
+    color: #ec3e3e!important;
+    font-size: 12px!important;
+    i{
+        font-size: 12px;
+    }
+}
+.removeItemFromCart{
+    text-align: center;
+    i{
+        color: #ec3e3e;
+        cursor: pointer;
+        transition: .1s all;
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+div.emptyCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p.titleEmpty{
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+        margin-left: 50px;
+        letter-spacing: .5px;
+        margin-top: 10px;
+        font-family: 'Lato';
+        color: #565E71
+    }
+    span{
+        margin-left: 50px;
+        font-size: 15px;
+        font-family: 'Roboto';
+        margin-top: 5px;   
+    }
+    button{
+        background-color: #017AFF;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+        font-family: 'Lato';
+        width: 150px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+}

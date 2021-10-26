@@ -1,0 +1,35 @@
+.category-gender{
+    height: 150px;
+    width: 100%;
+    background: #4D3193;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 500px;
+        height: 100%;
+        background-color: #826EAE;
+        transform: skewX(10deg);
+        filter: blur(1px);
+    
+    }
+    h1{
+        z-index: 1;
+        text-align: center;
+        font-size: 35px;
+        letter-spacing: 1px;
+        color: #fff;
+        font-family: 'Roboto';
+        font-weight: 300;
+    }
+}

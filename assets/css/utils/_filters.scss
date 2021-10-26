@@ -1,0 +1,275 @@
+.contentFilters{
+    width: 1135px;
+    margin: auto;
+
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .filters{
+        width: 24.9%;
+        padding: 10px 15px;
+
+        .titleFilters{
+            font-family: 'Roboto';
+            letter-spacing: .2px;
+            font-size: 14px;
+            font-weight: normal;
+            padding-bottom: 10px;
+        }
+    
+    
+        .content{
+            width: 100%;
+            border: 1px solid rgba(204, 204, 204, 0.521);
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            letter-spacing: .2px;
+            padding: 15px;
+            cursor: pointer;
+            margin-top: 5px;
+            font-family: 'Lato';
+
+            i{
+                color: #154380;
+                font-size: 12px;
+            }
+        }
+        .price{
+            margin-top: 13px;
+            p.faixaTitle{
+                font-size: 14px;
+                font-family: 'Roboto';
+                letter-spacing: .2px;
+            }
+
+            .priceContetn{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .separ{
+                    width: calc(100% - 160px);
+                    height: 1px;
+                    background-color: #ccc;
+                }
+                input{
+                    border: 1px solid #ccc;
+                    width: 80px!important;
+                    padding: 10px;
+                }
+            }
+            
+            .confirmPrices{
+                margin-top: 10px;
+                width: 100%;
+                padding: 13px;
+                background-color: #154380;
+                color: #fff;
+                border: none;       
+            }
+        }
+
+        .itensSex{
+            margin-left: 20px;
+            display: none;
+            a{
+                color: #666;
+                font-family: 'Lato';
+                margin-top: 10px;
+                text-decoration: none;
+                display: block;
+
+                &:hover{
+                    text-decoration: underline;
+                    color: #212121;
+                }
+            }
+            padding-bottom: 10px;
+        }
+
+        .categoriesItens{
+            display: block;
+            a{
+                color: #666;
+                font-family: 'Lato';
+                margin-top: 10px;
+                text-decoration: none;
+                display: block;
+
+                &:hover{
+                    text-decoration: underline;
+                    color: #212121;
+                }
+            }
+            padding-bottom: 10px;
+        }
+    }
+    .productsFiltered{
+        width: 74.9%;
+        padding: 0 20px;
+
+        p.activeFilters{
+            font-family: 'Lato';
+            font-weight: 600;
+        }
+
+        .activeFiltersDiv{
+            display: flex;
+            margin-top: 10px;
+
+            .itemFilter{
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 15px;
+                align-items: center;
+                font-family: 'Lato';
+                border-radius: 30px;
+                background-color: #e0e0e0;
+                font-size: 12px;
+                border: 1px solid #ccc;
+                color: #212121;
+                text-transform: uppercase;
+
+                button{
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 11px;
+                    margin-left: 10px;
+                    color: #212121;
+                }
+                p{
+                    &:first-child{
+                        width: 87%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .filteredProducts{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            
+            #changeSex{
+                padding: 10px;
+                border: 1px solid #ccc;
+                font-family: 'Lato';
+                border-radius: 3px;
+            }
+        
+        }
+        
+        .initialProducts{
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            .productFiltered{
+                width: 24.381%;
+                margin-right: 5px;
+                margin-top: 10px;
+                height: 270px;
+                cursor: pointer;
+
+                border: 1px solid rgba(204, 204, 204, 0.596);
+                border-radius: 3px;
+
+                a{
+                    text-decoration: none;
+                    color: #212121;
+                }
+                img{
+                    display: block;
+                    margin: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+                .photo{
+                    width: 100%;
+                    height: 150px;
+                }
+
+                .content{
+                    padding-top: 15px;
+                    padding-left: 10px;
+                }
+                .previous-price{
+                    font-size: 11px;
+                    font-family: 'Lato';
+                    font-weight: 100;
+                    color: rgb(146, 146, 146);
+                    text-decoration: line-through;
+                }
+
+                .price{
+                    font-size: 22px;
+                    font-family: 'Lato';
+
+                
+                }
+                .desc{
+                    padding-left: 10px;
+                    font-size: 14px;
+                    font-family: 'Roboto';
+                    font-weight: 100;
+                    margin-top: 0px;
+                }
+                .haveDiscount{
+                    font-size: 12px;
+                    font-weight: 800;
+                    color: #ec3e3e;
+                }
+                &:hover{
+                    box-shadow: 0px 0px 10px -2px rgba(167, 167, 167, 0.582);
+                }
+            }
+        }
+        
+    }
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+.dis-blocks{
+    display: block!important;
+}
+.showMsgError{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    p{
+        font-family: 'Lato';
+        font-size: 18px;
+        font-weight: 100;
+        margin-top: 10PX
+    }
+}
+
+.showMsgErrorJs{
+    display: none;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    p{
+        font-family: 'Lato';
+        font-size: 18px;
+        font-weight: 100;
+        margin-top: 10PX
+    }
+}

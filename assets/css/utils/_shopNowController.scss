@@ -1,0 +1,671 @@
+section.stepsShowNow {
+
+    width: 1130px;
+    margin:30px auto;
+
+
+    div.headerSteps{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        div.stepItem{
+            width: 33.2%;
+            user-select: none;
+            padding: 15px 20px;
+
+            display: flex;
+            align-items: center;
+
+            border-top: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+
+            border-radius: 1px;
+            i{
+                font-size: 19px;
+                color: #666;     
+            }
+            
+            p{
+                margin-left: 10px;
+                font-family: 'Lato';
+                color: #666;
+            }
+        }
+    }
+
+    .stepActive{
+        border-top: 1px solid #154380!important;
+        border-left: 1px solid #154380!important;
+        border-right: 1px solid #154380!important;
+
+
+        i{
+            color: #154380!important;
+        }
+        p{
+            font-weight: 400;
+            color: #154380!important;
+        }
+    }
+
+    div.contentStepItem{
+        width: 80%;
+        margin: 5px auto;
+
+        border: 1px solid #ccc;
+        border-top: none;
+
+
+        padding: 15px;
+        height: 500px;
+        display: none;
+    }
+
+    .activeStepItem{
+        display: block!important;
+    }
+
+    
+}
+.mt-10{
+    padding-top: 60px!important;
+}
+
+section.infoProductSelected{
+    width: 904px;
+    margin:30px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div.photoProductSelected{
+        img{
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    div.nameAndInfos{
+        margin-left: 15px;
+        p.priceNoDiscount{
+            display: flex;
+            flex-direction: column;
+
+            font-size: 22px;
+            span{
+                font-size: 12px!important;
+            }
+        }
+        p{
+            font-family: 'Lato';
+            color: #212121;
+            margin-top: 5px;
+            &:first-child{
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .firstColumn{
+        display: flex;
+        align-items: center;
+    }
+
+    .finalPrice{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lato';
+        span.haveDiscount{
+            text-align: center;
+            color: #ec3e3e;
+            font-weight: 800;
+        }
+        p.infoPrice{
+            color: #666;
+            text-align: center;
+            padding: 5px 0;
+            text-transform: uppercase;
+        }
+        p.priceItem{
+            font-weight: 100;
+            font-size: 30px;
+        }
+    }
+}
+
+div.alertStepDatas{
+    width: 100%;
+    margin: 0px auto;
+    padding: 25px 15px;
+    border: 1px solid rgb(231, 229, 229);
+    position: relative;
+
+    &::before{
+        content: '';
+        width: 5px;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-color: #f0ad4e;
+       
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #212121;
+    user-select: none;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+
+    i{
+        margin-right: 10px;
+    }
+}
+
+div.address{
+
+    p.titleAddress{
+        font-family: 'Lato';
+        margin-top: 15px;
+        font-size: 19px;
+        font-weight: 100;
+    }
+
+    div.addressItem{
+        width: 49.9%;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+        border-radius: 2px;
+        font-family: 'Lato';
+
+        div.isMain{
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            label{
+                user-select: none;
+                margin-left: 10px;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+
+        div.anyInfo{
+            padding: 10px;
+            p{
+                margin-top: 2px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+div.firstColumnForData{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    div.control{
+        width: 32.9%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lato';
+        label{
+            font-size: 12px;
+            letter-spacing: .2px;
+            text-transform: uppercase;            
+        }
+
+
+        input{
+            padding: 10px;
+            margin-top: 2px;
+            border: 1px solid #ccc;
+            &:disabled{
+                cursor: no-drop;
+            }
+        }
+    }
+}
+
+div.secondColumnForData{
+    display: flex;
+    margin-top: 7px;
+
+    div.control{
+        margin-left: 5px;
+        width: 32.9%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lato';
+        &:first-child{  
+            margin-left: 0px;
+        }
+
+        label{
+            font-size: 12px;
+            letter-spacing: .2px;
+            text-transform: uppercase;            
+        }
+
+        input,select{
+            margin-top: 3px;
+            border: 1px solid #ccc;    
+        }
+        input{
+            padding: 10px;
+        }
+        select{
+            padding: 11.5px;
+        }
+    }
+}
+
+div.buttonsPayment{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 17px;
+    .next{
+        cursor: pointer;
+        background-color: #154380;
+        padding: 13px;
+        width: 150px;
+        border: none;
+        color: #fff;
+        font-family: 'Lato';
+        border-radius: 3px;
+        letter-spacing: .3px;
+    }
+    .back{
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: rgb(233, 231, 231);
+        padding: 13px;
+        width: 150px;
+        margin-right: 7px;
+        border-radius: 3px;
+        font-family: 'Lato';
+    }
+}
+
+.msgErrorFirstDisplay{
+    color: #ec3e3e;
+    font-family: 'Lato';
+    font-weight: 800;
+    margin-right: 15px;
+    letter-spacing: .2px;
+    user-select: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+div[data-infoProductStep="2"]{
+    position: relative;
+    p.titleStep{
+        margin-top: 10px;
+        font-family: 'Lato';
+        font-size: 18px;
+    }
+
+    div.paymentItem{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        div{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            i{
+                margin-left: 15px;
+            }
+        }
+        img{
+            border: 1px solid #ccc;
+            padding: 7px;
+            border-radius: 2px;
+            margin-left: 15px;
+        }
+
+        label{
+            display: flex;
+            text-transform: uppercase;
+            user-select: none;
+            align-items: center;
+
+            p{
+                margin-left: 15px;
+                font-family: 'Lato';
+                font-weight: 800;
+                letter-spacing: .2px;
+                font-size: 14px;
+            }
+        }
+    }
+    
+    div.buttonsStep2{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        button.nextStep,button.prevStep{
+            padding: 13px;
+            width: 150px;
+            background-color: transparent;
+            border: none;
+            font-family: 'Lato';
+            border-radius: 3px;
+            cursor: pointer;
+            letter-spacing: .2px;
+        }
+
+        button.nextStep{
+            background-color: #154380;
+            color: #fff;
+        }
+
+        button.prevStep{
+            border: 1px solid #ccc;
+            background-color: rgb(233, 231, 231);
+            margin-right: 7px;
+        }
+    }
+}
+
+div[data-infoProductStep="3"] {
+    div.verifyYoursData{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60PX;
+        margin-bottom: 10px;
+
+        p.titleToVerify{
+            font-family: 'Lato';
+            font-size: 25px;
+            font-weight: 100;
+            margin-top: 10px;
+            letter-spacing: .3px;
+        }
+    }
+
+    div.contentStep3{
+        text-align: center;
+        font-family: 'Lato';
+
+        p{
+            margin-top: 10px;
+            font-size: 15px;
+        }
+    }
+    div.buttonsContentStep3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+
+        button{
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 150px;
+
+            &:first-child{
+                background-color: rgb(233, 231, 231);
+                padding: 13px;
+                border-radius: 45px;
+                border: 1px solid #ccc;
+                font-family: 'Lato';
+            }
+
+            &:last-child{
+
+                background-color: #154380;
+                margin-left: 20px;
+                padding: 13px;
+                border-radius: 45px;
+                font-family: 'Lato';
+                color: #fff;
+
+            }
+        }
+    }
+}
+
+div.modalToPayWithWallet {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.24);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    div.contentModalPayWithWallet {
+
+        width: 550px;
+        background-color: #fff;
+        border-radius: 3px;
+
+        div.dontHaveMoney{
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                font-size: 22px;
+                font-weight: 100;
+                text-transform: uppercase;
+                font-family: 'Lato';
+                margin-top: 10px;
+                letter-spacing: .3px;
+            }
+
+            span{
+                font-family: 'Lato';
+                margin-top: 5px;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+
+            span.required{
+                color: green;
+            }
+            span.got{
+                color: #ec3e3e;
+            }
+
+            button{
+                background-color: transparent;
+                border: none;
+                margin-top: 10px;
+                font-size: 15px;
+                font-family: 'Lato';
+                font-weight: 100;
+                cursor: pointer;
+                i{
+                    font-size: 10px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        div.haveMoney{
+            padding: 20px;
+            div.headerMoney{
+                span{
+                    font-weight: 100;
+                    font-family: 'Lato';
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+                float: right;
+
+                p.totalMoney{
+                    font-family: 'Lato';
+                    font-weight: 900;
+                    font-size: 20px;
+                }
+            }
+
+            div.productToBuyed{
+                margin-top: 80px;
+                display: flex;
+                justify-content: space-between;
+                background-color: #f3f4f5;
+                padding: 10px;
+                border-radius: 3px;
+
+                span{
+                    font-family: 'Lato';
+                    text-transform: uppercase;
+                    font-size: 13px;
+                }
+                p{
+                    font-family: 'Lato';
+                    color: #525252;
+                }
+            }
+            div.totalAfter{
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: end;
+
+                span{
+                    font-family: 'Lato';
+                    text-transform: uppercase;
+                    font-size: 13px;
+                }
+
+                p{
+                    font-family: 'Lato';
+                    color: #525252;
+                }
+            }
+
+            .buttons{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                margin-top: 25px;
+
+
+                button{
+                    padding: 13px 15px;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-family: 'Lato';
+
+                    &:first-child{
+                        margin-right: 10px;
+                        background-color: #f3f4f5;
+                        transition: 1s all;
+
+                        &:hover{
+                            background-color: #ccc;
+                        }
+                    }
+
+                    &:last-child{
+                        background-color: #154380;
+                        color: #fff;
+                        transition: 1s all;
+                        
+                        &:hover{
+                            background-color: #ec3e3e;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.successBuyedWithWallet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+    flex-direction: column;
+    
+    p.firstP{
+       
+        font-size: 23px;
+        font-family: 'Lato';
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: .3px;
+    
+    }
+
+    p.secondP{
+        font-family: 'Lato';
+        text-transform: uppercase;
+        color: #666;
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    p.titleStatus{
+        font-family: 'Lato';
+        padding: 5px 0;
+        margin-top: 10px;
+    }
+    div.contentStatus{
+        font-family: 'Lato';
+        width: 500px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ccc;
+        background-color: rgb(240, 240, 240);
+        border-radius: 3px;
+    
+    }
+
+    a{
+        text-decoration: none;
+        padding: 12px;
+        background-color: #154380;
+        color: #fff;
+        margin-top: 15px;
+        display: block;
+        width: 180px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 12.5px;
+        margin: 15px auto;
+        font-family: 'Lato';
+        text-align: center;
+    }
+}

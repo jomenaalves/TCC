@@ -1,0 +1,162 @@
+
+.sectionLoginUser{
+
+
+    max-width: 1130px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img#logo{
+        margin-top: 55px;
+    }
+    .title-section{
+        font-size: 30px;
+        font-family: 'Lato';
+        font-weight: 100;
+    }
+
+    .ContentLogin{
+        width: 450px;
+        height: 300px;
+        margin-top: 15px;
+        border-radius: 3px;
+    }
+
+    form{
+        padding: 10px 40px;
+
+        button{
+            margin-top: 15px;
+            padding: 12px;
+            width: 100%;
+            border-radius: 0px;
+            font-family: 'Lato';
+            font-weight: 100;
+            font-size: 18px;
+            background-color: #154380;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    .contentform{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        label{
+            font-family: 'Lato';
+            font-size: 18px;
+        }
+        input{
+        
+            border-radius: 3px;
+            padding: 10px;
+            margin-top: 1px;
+            border: none;
+            font-family: 'Lato';
+            font-size: 18px;
+            font-weight: 100;
+            border: 1px solid rgba(204, 204, 204, 0.63);
+            outline: none;
+        }
+    }
+
+    .reCaptha{
+        margin-top: 40px;
+        font-family: 'Lato';
+        text-align: center;
+        font-size: 16px;
+        user-select: none;
+        color: #666;
+        i{
+            margin-left: 3px;
+            color: #F4B400;
+        }
+    }
+
+    .errorFormText{
+       color: #c92424;
+       font-family: 'Lato';
+       display: none;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+    }
+
+    .loaderl{
+        display: none;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin-top: 16px;
+        }
+    }
+
+    .successLogin{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        p{
+            font-family: 'Lato';
+            margin-top: 10px;
+        }
+
+        img#loaderSuccessLogin{
+            margin-top: 10px;
+        }
+    }
+
+    #submit{
+        &:disabled {
+            border: 1px solid #999999;
+            background-color: #cccccc;
+            color: #666666;
+            border-radius: 0px;
+        }
+    }
+}
+
+.sectionActive{
+    .title{
+        font-size: 30px;
+        font-family: 'Lato';
+        margin-top: 35Px;
+        font-weight: 100;
+    }
+
+    .subtitle{
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Lato';
+    }
+
+    a{
+        margin-top: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #212121;
+        font-family: 'Lato';
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 13px;
+        
+        i{
+            margin-left: 5px;
+            font-size: 12px;
+        }
+    
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
