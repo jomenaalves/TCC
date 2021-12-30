@@ -52,7 +52,7 @@ class CartController
             $soma = 0;
             foreach ($allItens as $key => $value) {
                if($value['InitialDiscount'] > 0) {
-                    $percent = (floatval($value['InitialPrice']) / 100) * $value['InitialDiscount'];
+                    $percent = ((float)$value['InitialPrice'] / 100) * $value['InitialDiscount'];
                                         
                     $totalFinal = floatval($value['InitialPrice']) - $percent;
                     $FinalPrice = number_format(floatval($totalFinal),2);
